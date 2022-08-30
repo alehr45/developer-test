@@ -22,4 +22,4 @@
 
 ##### Bonus:
 
-8. - Allow user to sort the output swapping Ascending/Descending.
+8. Allow user to sort the output swapping Ascending/Descending.
