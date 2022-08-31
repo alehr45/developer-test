@@ -44,6 +44,7 @@ function App() {
         <hr />
       </div>
       <h1 style={styles.center}>Vice Presidents</h1>
+      <h5 style={styles.center}>@ Disney World Conference</h5>
       {vicePresidents.map((item, index) => {
         return (
           <div key={index} style={styles.center}>
@@ -59,12 +60,29 @@ function App() {
         );
       })}
 
-      <div>
-        <h1 style={styles.center}>Attendance in Order</h1>
+      <div
+        style={{
+          border: "1px solid black",
+          boxShadow: "1px 2px 9px gray",
+          marginTop: 25,
+          marginLeft: 300,
+          marginRight: 300,
 
-        <div style={styles.center}>{checkedItems}</div>
+          alignItems: "center"
+        }}
+      >
+        <h1 style={styles.center}>Attendance in Order</h1>
+        <p style={styles.center}>{checkedItems}</p>
         <h1 style={styles.center}>Attendance in Reverse</h1>
-        <div style={styles.center}>{reversed}</div>
+        <p
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            paddingBottom: 15
+          }}
+        >
+          {reversed}
+        </p>
       </div>
     </>
   );
